@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "autoreel",
+	"version": "${version}",
+	"name": "Auto Reel",
+	"description": "Client-side. Automatically reels in your fishing rod when a fish bites. Never recasts.",
+	"authors": ["you"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.autoreel.AutoReel"]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
