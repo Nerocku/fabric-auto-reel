@@ -119,7 +119,6 @@ public final class AutoReel implements ClientModInitializer {
 
 		InteractionResult result = mc.gameMode.useItem(player, hand);
 		if (result.consumesAction()) {
-			player.swing(hand);
 		}
 	}
 
