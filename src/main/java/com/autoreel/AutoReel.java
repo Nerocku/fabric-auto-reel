@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.projectile.FishingHook;
 import net.minecraft.world.item.FishingRodItem;
+import net.minecraft.world.item.component.SwingAnimation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -119,6 +120,7 @@ public final class AutoReel implements ClientModInitializer {
 
 		InteractionResult result = mc.gameMode.useItem(player, hand);
 		if (result.consumesAction()) {
+			player.swing(hand, SwingAnimation.DEFAULT, false);
 		}
 	}
 
